@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<form id="form" method="post" action="" style="display: flex; justify-content: center;">
+		<input type="text" name="name" placeholder="Имя" style="font-size: 20px;">
+		<input type="text" name="number" placeholder="Номер телефона" style="font-size: 20px;">
+		<button id="button" style="font-size: 20px;">Отправить</button>
+		<input type="search" name="searcher">
+		<button id="button_search" style="font-size: 20px;">Поиск</button>
+	</form>
+	<form method="get" action="">
+		<input type="search" name="searcher">
+		<button id="button_search" style="font-size: 20px;">Поиск</button>
+	</form>
+	<div style="display: flex;">
+		<p style="margin-right: 7px; margin-bottom: 0; font-weight: bold;">Имя:</p>
+		<p style="margin-bottom: 0;" id="res_name"></p>
+	</div>
+	<div style="display: flex;">
+		<p style="margin-right: 7px; font-weight: bold;">Телефон:</p>
+		<p style="margin-bottom: 0;" id="res_phone"></p>
+	</div>
+	
+	<script
+  		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
+  	<script src="js/ajax.js"></script>
+</body>
+</html>
